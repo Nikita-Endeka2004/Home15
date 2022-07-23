@@ -179,10 +179,12 @@ body {
     display: none;
   }
 
-  input:invalid + .label{
+  input:valid ~ .label{
     display: none;
   }
 
-  input:valid + .label_true{
+  input:valid ~ .label_true{
+    top: 40px;
+    position: absolute;
     display: inline;
   }
